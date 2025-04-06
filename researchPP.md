@@ -55,7 +55,7 @@ LIST OF ABBREVIATIONS	xi
 6.1 Conclusion	7  
 6.2 Future Works	7  
 
-REFERENCES	8  
+#### Chapter 7 - Research Timeline	9  
 
 ---
 
@@ -211,6 +211,19 @@ Future research could explore:
 
 - Incorporating advanced machine learning techniques, such as deep learning, for improved detection accuracy.
 - Expanding the model to include other types of cyber threats, such as ransomware or social engineering attacks.
+
+---
+
+### Chapter 7 - Research Timeline
+
+The research timeline is structured as follows:
+
+| **Activity**                                   | **Week 1** | **Week 2** | **Week 3** | **Week 4** | **Week 5** | **Week 6** | **Week 7** | **Week 8** | **Week 9** | **Week 10** | **Week 11** | **Week 12** |
+|------------------------------------------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|-------------|-------------|-------------|
+| Literature review and data collection          | <span style="color:green">██████████</span> | <span style="color:green">██████████</span> |            |            |            |            |            |            |            |             |             |             |
+| Analyze detection techniques and deploy surveys|            |            | <span style="color:yellow">██████████</span> | <span style="color:yellow">██████████</span> | <span style="color:yellow">██████████</span> | <span style="color:yellow">██████████</span> |            |            |            |             |             |             |
+| Develop detection or prevention method         |            |            |            |            |            |            | <span style="color:red">██████████</span> | <span style="color:red">██████████</span> |            |             |             |             |
+| Write and finalize the research report         |            |            |            |            |            |            |            |            | <span style="color:red">██████████</span> | <span style="color:red">██████████</span>  | <span style="color:red">██████████</span>  | <span style="color:red">██████████</span>  |
 
 ---
 
