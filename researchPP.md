@@ -139,19 +139,7 @@ Machine learning algorithms have shown significant promise in phishing detection
 - **Random Forest**: Known for its robustness and ability to handle imbalanced datasets [Author, Year].
 - **Support Vector Machines (SVM)**: Effective for binary classification tasks but computationally intensive for large datasets [Author, Year].
 - **Neural Networks**: Capable of capturing complex patterns but require extensive computational resources and large datasets [Author, Year].
-
-Ensemble methods, such as Gradient Boosting and XGBoost, have also been explored for their ability to improve detection accuracy [Author, Year]. However, challenges such as overfitting, scalability, and computational complexity remain areas of active research [Author, Year].
-
-#### 2.3 Related Studies
-
-Recent studies have explored various aspects of phishing detection:
-
-- **Preprocessing Techniques**: Research has focused on addressing data imbalance and improving dataset quality through augmentation and cleaning methods [Author, Year].
-- **Feature Engineering**: Innovative approaches to feature extraction and selection have been proposed to enhance model performance [Author, Year].
-- **Algorithm Optimization**: Comparative analyses of machine learning models have identified effective algorithms for phishing detection, with a focus on improving accuracy and adaptability [Author, Year].
-- **User Feedback Integration**: Studies have highlighted the importance of incorporating user feedback to refine detection models and improve adaptability to evolving phishing tactics [Author, Year].
-
-These studies provide a foundation for addressing the research objectives and highlight the need for an integrated approach that combines preprocessing, feature engineering, machine learning optimization, and user feedback integration [Author, Year].
+- Ensemble methods, such as Gradient Boosting and XGBoost, have also been explored for their ability to improve detection accuracy [Author, Year]. However, challenges such as overfitting, scalability, and computational complexity remain areas of active research [Author, Year].
 
 ---
 
