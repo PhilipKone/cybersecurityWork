@@ -63,23 +63,23 @@ REFERENCES	8
 
 #### 1.1 Background of Study
 
-Phishing attacks are a form of social engineering that exploit human psychology and technical vulnerabilities to deceive users into divulging sensitive information such as login credentials, financial data, or personal details. These attacks often involve fraudulent emails, websites, or messages that mimic legitimate entities, leveraging techniques such as spoofing, domain squatting, and URL obfuscation to appear authentic.
+Phishing attacks are a form of social engineering that exploit human psychology and technical vulnerabilities to deceive users into divulging sensitive information such as login credentials, financial data, or personal details [Author, Year]. These attacks often involve fraudulent emails, websites, or messages that mimic legitimate entities, leveraging techniques such as spoofing, domain squatting, and URL obfuscation to appear authentic [Author, Year].
 
-The evolution of phishing tactics has introduced advanced methods like spear phishing, which targets specific individuals using personalized information, and whaling, which focuses on high-profile executives. Additionally, voice phishing (vishing) and SMS phishing (smishing) have expanded the attack surface by exploiting telecommunication channels.
+The evolution of phishing tactics has introduced advanced methods like spear phishing, which targets specific individuals using personalized information, and whaling, which focuses on high-profile executives [Author, Year]. Additionally, voice phishing (vishing) and SMS phishing (smishing) have expanded the attack surface by exploiting telecommunication channels [Author, Year].
 
-From a technical perspective, phishing attacks exploit weaknesses in email protocols (e.g., lack of SPF, DKIM, or DMARC configurations), browser vulnerabilities, and user behavior. The increasing sophistication of phishing kits, which automate the creation of phishing campaigns, has lowered the barrier to entry for attackers. Furthermore, the rise of machine learning and AI has enabled attackers to craft more convincing phishing content, making detection increasingly challenging.
+From a technical perspective, phishing attacks exploit weaknesses in email protocols (e.g., lack of SPF, DKIM, or DMARC configurations), browser vulnerabilities, and user behavior [Author, Year]. The increasing sophistication of phishing kits, which automate the creation of phishing campaigns, has lowered the barrier to entry for attackers [Author, Year]. Furthermore, the rise of machine learning and AI has enabled attackers to craft more convincing phishing content, making detection increasingly challenging [Author, Year].
 
-To address these challenges, the development of adaptive phishing detection models has become essential. This involves creating comprehensive datasets of phishing and legitimate communications, engineering features that capture critical attributes such as URL structure and domain reputation, and leveraging machine learning algorithms to enhance detection accuracy. These approaches ensure scalability and adaptability to evolving phishing tactics.
+To address these challenges, the development of adaptive phishing detection models has become essential. This involves creating comprehensive datasets of phishing and legitimate communications, engineering features that capture critical attributes such as URL structure and domain reputation, and leveraging machine learning algorithms to enhance detection accuracy [Author, Year]. These approaches ensure scalability and adaptability to evolving phishing tactics.
 
-The widespread adoption of digital communication and online transactions has amplified the impact of phishing attacks, resulting in significant financial losses, data breaches, and reputational damage. According to industry reports, phishing remains one of the most common initial attack vectors for cyber incidents, underscoring the urgent need for effective detection mechanisms that integrate advanced machine learning techniques.
+The widespread adoption of digital communication and online transactions has amplified the impact of phishing attacks, resulting in significant financial losses, data breaches, and reputational damage [Author, Year]. According to industry reports, phishing remains one of the most common initial attack vectors for cyber incidents, underscoring the urgent need for effective detection mechanisms that integrate advanced machine learning techniques [Author, Year].
 
 #### 1.2 Problem Statement
 
-Phishing attacks pose a significant threat to both individuals and organizations by exploiting human vulnerabilities. These attacks trick users into providing sensitive information such as login credentials, financial details, or personal data by masquerading as trustworthy entities. The sophistication of phishing tactics has evolved over time, transitioning from rudimentary email scams to more complex schemes like spear phishing, whaling, and vishing. The rise of digital communication and online transactions has amplified the threat, resulting in considerable financial losses and reputational harm.
+Phishing attacks pose a significant threat to both individuals and organizations by exploiting human vulnerabilities [Author, Year]. These attacks trick users into providing sensitive information such as login credentials, financial details, or personal data by masquerading as trustworthy entities [Author, Year]. The sophistication of phishing tactics has evolved over time, transitioning from rudimentary email scams to more complex schemes like spear phishing, whaling, and vishing [Author, Year]. The rise of digital communication and online transactions has amplified the threat, resulting in considerable financial losses and reputational harm [Author, Year].
 
-Despite advancements in detection mechanisms, significant challenges remain in developing adaptive phishing detection systems. These challenges include the creation of comprehensive and balanced datasets, the extraction of meaningful features that enhance detection accuracy, and the optimization of machine learning algorithms to handle evolving phishing tactics. Existing solutions often struggle with scalability, adaptability, and the ability to generalize across diverse phishing scenarios.
+Despite advancements in detection mechanisms, significant challenges remain in developing adaptive phishing detection systems. These challenges include the creation of comprehensive and balanced datasets, the extraction of meaningful features that enhance detection accuracy, and the optimization of machine learning algorithms to handle evolving phishing tactics [Author, Year]. Existing solutions often struggle with scalability, adaptability, and the ability to generalize across diverse phishing scenarios [Author, Year].
 
-Addressing these challenges requires a systematic approach that integrates preprocessing, feature engineering, machine learning optimization, and user feedback integration. This research aims to bridge these gaps by proposing an adaptive phishing detection model that leverages advanced machine learning techniques to improve detection accuracy and efficiency.
+Addressing these challenges requires a systematic approach that integrates preprocessing, feature engineering, machine learning optimization, and user feedback integration [Author, Year]. This research aims to bridge these gaps by proposing an adaptive phishing detection model that leverages advanced machine learning techniques to improve detection accuracy and efficiency [Author, Year].
 
 #### 1.3 Objectives
 
@@ -114,44 +114,44 @@ This methodology ensures a systematic approach to developing an adaptive phishin
 
 #### 2.1 Introduction
 
-Phishing attacks have become increasingly sophisticated, necessitating advanced detection mechanisms. This chapter reviews existing techniques and highlights gaps that align with the research objectives: preprocessing, feature engineering, machine learning algorithm evaluation, and user feedback integration. By addressing these areas, the research aims to develop an adaptive phishing detection model that improves detection accuracy and adaptability.
+Phishing attacks have become increasingly sophisticated, necessitating advanced detection mechanisms [Author, Year]. This chapter reviews existing techniques and highlights gaps that align with the research objectives: preprocessing, feature engineering, machine learning algorithm evaluation, and user feedback integration [Author, Year]. By addressing these areas, the research aims to develop an adaptive phishing detection model that improves detection accuracy and adaptability [Author, Year].
 
 #### 2.2 Phishing Detection Techniques
 
 ##### 2.2.1 Preprocessing Techniques
 
-Preprocessing is a critical step in phishing detection, ensuring that raw data is cleaned and prepared for effective model training. Existing studies emphasize the importance of handling missing values, removing duplicates, and addressing data imbalance through techniques such as oversampling, undersampling, or synthetic data generation. For example, datasets like PhishTank and OpenPhish provide labeled phishing and legitimate URLs, but preprocessing is required to make them suitable for machine learning models. Effective preprocessing enhances the quality of the dataset and ensures robust model performance.
+Preprocessing is a critical step in phishing detection, ensuring that raw data is cleaned and prepared for effective model training [Author, Year]. Existing studies emphasize the importance of handling missing values, removing duplicates, and addressing data imbalance through techniques such as oversampling, undersampling, or synthetic data generation [Author, Year]. For example, datasets like PhishTank and OpenPhish provide labeled phishing and legitimate URLs, but preprocessing is required to make them suitable for machine learning models [Author, Year]. Effective preprocessing enhances the quality of the dataset and ensures robust model performance [Author, Year].
 
 ##### 2.2.2 Feature Engineering
 
-Feature engineering involves extracting meaningful attributes from raw data to improve model interpretability and accuracy. Common features used in phishing detection include:
+Feature engineering involves extracting meaningful attributes from raw data to improve model interpretability and accuracy [Author, Year]. Common features used in phishing detection include:
 
-- **URL Features**: Attributes such as URL length, the presence of special characters, and domain age.
-- **Email Features**: Analysis of email headers, sender reputation, and content-based attributes like the presence of suspicious keywords.
-- **Domain Reputation**: Historical trustworthiness, WHOIS information, and DNS records.
+- **URL Features**: Attributes such as URL length, the presence of special characters, and domain age [Author, Year].
+- **Email Features**: Analysis of email headers, sender reputation, and content-based attributes like the presence of suspicious keywords [Author, Year].
+- **Domain Reputation**: Historical trustworthiness, WHOIS information, and DNS records [Author, Year].
 
-Studies highlight that selecting relevant features is crucial for reducing computational complexity and improving detection accuracy. Feature selection techniques, such as recursive feature elimination and mutual information, are often employed to identify the most impactful features.
+Studies highlight that selecting relevant features is crucial for reducing computational complexity and improving detection accuracy [Author, Year]. Feature selection techniques, such as recursive feature elimination and mutual information, are often employed to identify the most impactful features [Author, Year].
 
 ##### 2.2.3 Machine Learning Algorithms
 
-Machine learning algorithms have shown significant promise in phishing detection. Commonly used algorithms include:
+Machine learning algorithms have shown significant promise in phishing detection [Author, Year]. Commonly used algorithms include:
 
-- **Random Forest**: Known for its robustness and ability to handle imbalanced datasets.
-- **Support Vector Machines (SVM)**: Effective for binary classification tasks but computationally intensive for large datasets.
-- **Neural Networks**: Capable of capturing complex patterns but require extensive computational resources and large datasets.
+- **Random Forest**: Known for its robustness and ability to handle imbalanced datasets [Author, Year].
+- **Support Vector Machines (SVM)**: Effective for binary classification tasks but computationally intensive for large datasets [Author, Year].
+- **Neural Networks**: Capable of capturing complex patterns but require extensive computational resources and large datasets [Author, Year].
 
-Ensemble methods, such as Gradient Boosting and XGBoost, have also been explored for their ability to improve detection accuracy. However, challenges such as overfitting, scalability, and computational complexity remain areas of active research.
+Ensemble methods, such as Gradient Boosting and XGBoost, have also been explored for their ability to improve detection accuracy [Author, Year]. However, challenges such as overfitting, scalability, and computational complexity remain areas of active research [Author, Year].
 
 #### 2.3 Related Studies
 
 Recent studies have explored various aspects of phishing detection:
 
-- **Preprocessing Techniques**: Research has focused on addressing data imbalance and improving dataset quality through augmentation and cleaning methods.
-- **Feature Engineering**: Innovative approaches to feature extraction and selection have been proposed to enhance model performance.
-- **Algorithm Optimization**: Comparative analyses of machine learning models have identified effective algorithms for phishing detection, with a focus on improving accuracy and adaptability.
-- **User Feedback Integration**: Studies have highlighted the importance of incorporating user feedback to refine detection models and improve adaptability to evolving phishing tactics.
+- **Preprocessing Techniques**: Research has focused on addressing data imbalance and improving dataset quality through augmentation and cleaning methods [Author, Year].
+- **Feature Engineering**: Innovative approaches to feature extraction and selection have been proposed to enhance model performance [Author, Year].
+- **Algorithm Optimization**: Comparative analyses of machine learning models have identified effective algorithms for phishing detection, with a focus on improving accuracy and adaptability [Author, Year].
+- **User Feedback Integration**: Studies have highlighted the importance of incorporating user feedback to refine detection models and improve adaptability to evolving phishing tactics [Author, Year].
 
-These studies provide a foundation for addressing the research objectives and highlight the need for an integrated approach that combines preprocessing, feature engineering, machine learning optimization, and user feedback integration.
+These studies provide a foundation for addressing the research objectives and highlight the need for an integrated approach that combines preprocessing, feature engineering, machine learning optimization, and user feedback integration [Author, Year].
 
 ---
 
