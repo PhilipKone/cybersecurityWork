@@ -2,59 +2,60 @@
 
 ### TABLE OF CONTENT
 
-DECLARATION	iii
-DEDICATION	iv
-ACKNOWLEDGMENTS	v
-ABSTRACT	vi
-TABLE OF CONTENT	vii
-LIST OF FIGURES	ix
-LIST OF TABLES	x
-LIST OF ABBREVIATIONS	xi
+DECLARATION	iii  
+DEDICATION	iv  
+ACKNOWLEDGMENTS	v  
+ABSTRACT	vi  
+TABLE OF CONTENT	vii  
+LIST OF FIGURES	ix  
+LIST OF TABLES	x  
+LIST OF ABBREVIATIONS	xi  
 
-#### Chapter 1 - Introduction	1
+#### Chapter 1 - Introduction	1  
 
-1.1 Background of Study	1
-1.2 Problem Statement	1
-1.3 Objectives	1
-1.4 Outline of Methodology	1
-1.5 Justification	1
-1.6 Outline of Dissertation	1
+1.1 Background of Study	1  
+1.2 Problem Statement	1  
+1.3 Objectives	1  
+1.4 Outline of Methodology	1  
+1.5 Justification	1  
+1.6 Outline of Dissertation	1  
 
-#### Chapter 2 - Literature Review	2
+#### Chapter 2 - Literature Review	2  
 
-2.1 Introduction	2
-2.2 Phishing Detection Techniques	2
-2.2.1 Preprocessing Techniques	2
-2.2.2 Feature Engineering	2
-2.2.3 Machine Learning Algorithms	2
-2.3 Related Studies	3
+2.1 Introduction	2  
+2.2 Phishing Detection Techniques	2  
+2.2.1 Preprocessing Techniques	2  
+2.2.2 Feature Engineering	2  
+2.2.3 Machine Learning Algorithms	2  
+2.3 Related Studies	3  
 
-#### Chapter 3 - Methodology	4
+#### Chapter 3 - Methodology	4  
 
-3.1 Overview	4
-3.2 Data Collection	4
-3.3 Analysis Techniques	4
-3.4 Model Development	4
+3.1 Overview	4  
+3.2 Data Collection	4  
+3.3 Analysis Techniques	4  
+3.4 Model Development	4  
+3.5 User Feedback Integration	4  
 
-#### Chapter 4 – Proposed Model	5
+#### Chapter 4 – Proposed Model	5  
 
-4.1 Machine Learning-Driven Detection	5
-4.2 Dataset Preparation	5
-4.3 Feature Engineering	5
-4.4 Model Selection and Evaluation	5
+4.1 Machine Learning-Driven Detection	5  
+4.2 Dataset Preparation	5  
+4.3 Feature Engineering	5  
+4.4 Model Selection and Evaluation	5  
 
-#### Chapter 5 – Results and Discussion	6
+#### Chapter 5 – Results and Discussion	6  
 
-5.1 Evaluation of Model	6
-5.2 Detection Accuracy	6
-5.3 Comparison with Existing Systems	6
+5.1 Evaluation of Model	6  
+5.2 Detection Accuracy	6  
+5.3 Comparison with Existing Systems	6  
 
-#### Chapter 6 – Conclusion and Future Works	7
+#### Chapter 6 – Conclusion and Future Works	7  
 
-6.1 Conclusion	7
-6.2 Future Works	7
+6.1 Conclusion	7  
+6.2 Future Works	7  
 
-REFERENCES	8
+REFERENCES	8  
 
 ---
 
@@ -78,7 +79,7 @@ Phishing attacks pose a significant threat to both individuals and organizations
 
 Despite advancements in detection mechanisms, significant challenges remain in developing adaptive phishing detection systems. These challenges include the creation of comprehensive and balanced datasets, the extraction of meaningful features that enhance detection accuracy, and the optimization of machine learning algorithms to handle evolving phishing tactics. Existing solutions often struggle with scalability, adaptability, and the ability to generalize across diverse phishing scenarios.
 
-Addressing these challenges requires a systematic approach that integrates dataset creation, feature engineering, and machine learning optimization. This research aims to bridge these gaps by proposing an adaptive phishing detection model that leverages advanced machine learning techniques to improve detection accuracy and efficiency.
+Addressing these challenges requires a systematic approach that integrates preprocessing, feature engineering, machine learning optimization, and user feedback integration. This research aims to bridge these gaps by proposing an adaptive phishing detection model that leverages advanced machine learning techniques to improve detection accuracy and efficiency.
 
 #### 1.3 Objectives
 
@@ -89,6 +90,7 @@ Addressing these challenges requires a systematic approach that integrates datas
 1. Preprocess phishing and legitimate emails, URLs, and messages to ensure robust model training.
 2. Design and implement feature engineering techniques to extract relevant attributes such as URL structure, domain reputation, and email content for effective phishing detection.
 3. Evaluate and optimize machine learning algorithms, including Random Forest, Support Vector Machines (SVM), and Neural Networks, to achieve high detection accuracy and efficiency.
+4. Integrate user feedback to refine the detection model and improve its adaptability to evolving phishing tactics.
 
 #### 1.4 Outline of Methodology
 
@@ -106,39 +108,13 @@ The research methodology is structured to address the challenges of phishing det
 
 This methodology ensures a systematic approach to developing an adaptive phishing detection model that leverages machine learning techniques to address the identified challenges.
 
-#### 1.5 Justification
-
-##### 1.5.1 Relevance in Academia
-
-Phishing attacks are a critical area of research in cybersecurity, as they combine technical and psychological aspects of security breaches. This study contributes to the academic community by addressing gaps in existing phishing detection techniques. By focusing on dataset creation, feature engineering, and machine learning optimization, the research introduces an innovative approach that bridges the fields of artificial intelligence and cybersecurity.
-
-The proposed adaptive phishing detection model provides a systematic framework for improving detection accuracy and adaptability. This research not only enhances the understanding of phishing detection mechanisms but also offers a foundation for future studies. It encourages further exploration into advanced machine learning techniques and their applications in cybersecurity, fostering interdisciplinary collaboration and innovation.
-
-##### 1.5.2 Relevance to Industry
-
-Phishing remains one of the most common attack vectors in the industry, causing significant financial losses, data breaches, and reputational damage. Organizations across various sectors, including finance, healthcare, and e-commerce, face increasing challenges in combating sophisticated phishing tactics.
-
-This research is highly relevant to the industry as it proposes an adaptive phishing detection model that leverages machine learning to address these challenges. By focusing on dataset creation, feature engineering, and algorithm optimization, the study ensures the development of scalable and adaptable detection systems. These systems can effectively respond to evolving phishing tactics, reducing the risk of successful attacks.
-
-The outcomes of this research provide practical solutions for deploying advanced detection mechanisms in real-world scenarios. Organizations can integrate the proposed model into their cybersecurity frameworks to enhance their defenses, minimize financial losses, and protect sensitive data. Furthermore, the research contributes to the industry's efforts to stay ahead of attackers by introducing innovative approaches to phishing detection.
-
-#### 1.6 Outline of Dissertation
-
-The dissertation is organized as follows:
-
-- Chapter 2 reviews existing phishing detection techniques.
-- Chapter 3 outlines the methodology used in this research.
-- Chapter 4 presents the proposed detection model.
-- Chapter 5 discusses the results and evaluation.
-- Chapter 6 concludes the research and suggests future work.
-
 ---
 
 ### Chapter 2 - Literature Review
 
 #### 2.1 Introduction
 
-Phishing attacks have become increasingly sophisticated, necessitating advanced detection mechanisms. This chapter reviews existing techniques and highlights gaps that align with the research objectives: preprocessing, feature engineering, and machine learning algorithm evaluation. By addressing these areas, the research aims to develop an adaptive phishing detection model that improves detection accuracy and adaptability.
+Phishing attacks have become increasingly sophisticated, necessitating advanced detection mechanisms. This chapter reviews existing techniques and highlights gaps that align with the research objectives: preprocessing, feature engineering, machine learning algorithm evaluation, and user feedback integration. By addressing these areas, the research aims to develop an adaptive phishing detection model that improves detection accuracy and adaptability.
 
 #### 2.2 Phishing Detection Techniques
 
@@ -173,8 +149,9 @@ Recent studies have explored various aspects of phishing detection:
 - **Preprocessing Techniques**: Research has focused on addressing data imbalance and improving dataset quality through augmentation and cleaning methods.
 - **Feature Engineering**: Innovative approaches to feature extraction and selection have been proposed to enhance model performance.
 - **Algorithm Optimization**: Comparative analyses of machine learning models have identified effective algorithms for phishing detection, with a focus on improving accuracy and adaptability.
+- **User Feedback Integration**: Studies have highlighted the importance of incorporating user feedback to refine detection models and improve adaptability to evolving phishing tactics.
 
-These studies provide a foundation for addressing the research objectives and highlight the need for an integrated approach that combines preprocessing, feature engineering, and machine learning optimization.
+These studies provide a foundation for addressing the research objectives and highlight the need for an integrated approach that combines preprocessing, feature engineering, machine learning optimization, and user feedback integration.
 
 ---
 
@@ -195,6 +172,10 @@ Statistical methods and machine learning models will be used to evaluate detecti
 #### 3.4 Model Development
 
 The detection model will be developed using machine learning algorithms, incorporating feature engineering and evaluation metrics.
+
+#### 3.5 User Feedback Integration
+
+User feedback will be incorporated to refine the detection model. Feedback from end-users will help identify false positives and false negatives, enabling the model to adapt to new phishing tactics and improve its overall performance.
 
 ---
 
