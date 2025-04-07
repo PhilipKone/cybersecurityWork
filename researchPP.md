@@ -236,5 +236,3 @@ The research timeline is structured as follows:
 5. S. J. Wang, Y. H. Hu, and C. Y. Chang, "Detecting Phishing Websites via an Improved Multi layer Perceptron Model," IEEE Access, vol. 9, pp. 141077-141088, 2021.
 6. H. A. M. K. S. S. L. M. V. Z. S. H. B. S. N. R. W. S. T. E. M. W. E. B. R. S. D. T. L. E. D. H. M. Ali, "A Comprehensive Review on Phishing Detection Techniques," Journal of Cyber Security Technology, vol. 5, no. 2, pp. 119-142, 2021.
 7. T. C. H. S. M. Alzubaidi and T. H. G. M. M. H. A. S. K. S. I. M. B. G. E. M. E. R. Alhussein, "Evaluating the Effectiveness of User Education in Phishing Prevention," Computers & Security, vol. 106, 2021.
-
-Conclusion. This research proposal outlines the critical need to address the threat of phishing attacks through improved detection methods. By investigating current techniques and proposing enhancements, this study aims to contribute valuable insights to the field of cybersecurity, ultimately helping to protect users from these increasingly sophisticated attacks.
