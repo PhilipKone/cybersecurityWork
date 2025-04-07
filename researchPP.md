@@ -27,7 +27,6 @@ LIST OF ABBREVIATIONS	xi
 2.2.1 Preprocessing Techniques	2  
 2.2.2 Feature Engineering	2  
 2.2.3 Machine Learning Algorithms	2  
-2.3 Related Studies	3  
 
 #### Chapter 3 - Methodology	4  
 
