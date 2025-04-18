@@ -133,17 +133,17 @@ The literature demonstrates substantial progress in phishing detection, with hig
 ### Chapter 3 - Methodology
 
 #### 3.1 Overview
-This chapter outlines the systematic methodology adopted to achieve the research objectives: (1) developing and validating a high-performing phishing detection model, (2) designing advanced feature engineering techniques, and (3) deploying and evaluating the model in a real-time environment. The approach is grounded in best practices and recommendations from recent literature (Mosa et al., 2023; Karim et al., 2023; Doshi et al., 2023)).
+This chapter outlines the systematic methodology adopted to achieve the research objectives: (1) developing and validating a high-performing phishing detection model, (2) designing advanced feature engineering techniques, and (3) deploying and evaluating the model in a real-time environment. The approach is grounded in best practices and recommendations from recent literature (Mosa et al., 2023; Karim et al., 2023; Doshi et al., 2023).
 
 #### 3.2 Data Collection
-- **Sources:** Publicly available phishing and legitimate datasets, such as PhishTank, Kaggle, Enron, SpamAssassin, IWSPA, and others (Mosa et al., 2023; Opara et al., 2024; Atawneh & Aljehani, 2023)).
+- **Sources:** Publicly available phishing and legitimate datasets, such as PhishTank, Kaggle, Enron, SpamAssassin, IWSPA, and others (Mosa et al., 2023; Opara et al., 2024; Atawneh & Aljehani, 2023).
 - **Data Types:** URLs, emails, HTML content, and associated metadata.
-- **Preprocessing:** Data cleaning (deduplication, normalization), handling missing values, and balancing datasets using augmentation techniques like SMOTE or ADASYN to address class imbalance (Yang et al., 2021; Gholampour & Verma, 2023)).
+- **Preprocessing:** Data cleaning (deduplication, normalization), handling missing values, and balancing datasets using augmentation techniques like SMOTE or ADASYN to address class imbalance (Yang et al., 2021; Gholampour & Verma, 2023).
 
 #### 3.3 Feature Engineering
-- **Feature Types:** Extraction of URL-based features (length, special characters, domain age), HTML features, email headers/content, third-party reputation, and behavioral indicators (Goud & Mathur, 2021; Aljofey et al., 2022; Opara et al., 2024)).
-- **Selection/Extraction:** Use of recursive feature elimination, genetic algorithms, principal component analysis, and embedding methods for deep learning (Kocyigit et al., 2024; Tanimu et al., 2024; Atawneh & Aljehani, 2023)).
-- **Justification:** Advanced feature engineering is shown to improve detection accuracy and model robustness (Liu et al., 2021; Swapna Goud & Mathur, 2021)).
+- **Feature Types:** Extraction of URL-based features (length, special characters, domain age), HTML features, email headers/content, third-party reputation, and behavioral indicators (Goud & Mathur, 2021; Aljofey et al., 2022; Opara et al., 2024).
+- **Selection/Extraction:** Use of recursive feature elimination, genetic algorithms, principal component analysis, and embedding methods for deep learning (Kocyigit et al., 2024; Tanimu et al., 2024; Atawneh & Aljehani, 2023).
+- **Justification:** Advanced feature engineering is shown to improve detection accuracy and model robustness (Liu et al., 2021; Swapna Goud & Mathur, 2021).
 
 #### 3.4 Model Development
 - **Algorithms:** Implementation and comparison of machine learning (Random Forest, SVM, XGBoost) and deep learning models (CNN, LSTM, BERT, hybrid/ensemble architectures) (Karim et al., 2023; Doshi et al., 2023; Chinta et al., 2025; Hassan, 2024).
@@ -152,7 +152,7 @@ This chapter outlines the systematic methodology adopted to achieve the research
 
 #### 3.5 Model Evaluation
 - **Metrics:** Accuracy, precision, recall, F1-score, MCC, ROC-AUC (Linh et al., 2024; Aljofey et al., 2022).
-- **Validation:** Holdout test sets, k-fold cross-validation, and, where possible, adversarial and out-of-domain samples to assess robustness (Gholampour & Verma, 2023; Misra & Rayz, 2022)).
+- **Validation:** Holdout test sets, k-fold cross-validation, and, where possible, adversarial and out-of-domain samples to assess robustness (Gholampour & Verma, 2023; Misra & Rayz, 2022).
 
 #### 3.6 Deployment and Real-Time Evaluation
 - **Deployment:** Simulated real-time environment or browser extension for live URL/email classification (Linh et al., 2024; Al-Subaiey et al., 2024).
@@ -202,9 +202,9 @@ flowchart TD
 ### Chapter 5 – Results and Discussion
 
 #### 5.1 Experimental Setup
-- **Datasets Used:** Benchmark and real-world datasets such as PhishTank, Kaggle, and Enron were used to provide a diverse and representative sample of phishing and legitimate communications (Mosa et al., 2023; Doshi et al., 2023)).
+- **Datasets Used:** Benchmark and real-world datasets such as PhishTank, Kaggle, and Enron were used to provide a diverse and representative sample of phishing and legitimate communications (Mosa et al., 2023; Doshi et al., 2023).
 - **Model Configuration:** Multiple algorithms were implemented, including Random Forest, SVM, and deep learning models (CNN, BERT), utilizing advanced feature sets (URL, HTML, behavioral). Hyperparameters were optimized using grid/random search.
-- **Validation Strategy:** Model performance was evaluated using stratified train-test splits, k-fold cross-validation, and, where possible, adversarial and out-of-domain samples to assess robustness (Gholampour & Verma, 2023; Misra & Rayz, 2022)).
+- **Validation Strategy:** Model performance was evaluated using stratified train-test splits, k-fold cross-validation, and, where possible, adversarial and out-of-domain samples to assess robustness (Gholampour & Verma, 2023; Misra & Rayz, 2022).
 
 #### 5.2 Evaluation Metrics
 - **Metrics:** Accuracy, precision, recall, F1-score, ROC-AUC, and MCC were used to provide a comprehensive assessment of model performance (Linh et al., 2024; Aljofey et al., 2022).
@@ -228,7 +228,7 @@ flowchart TD
 #### 5.4 Discussion
 - **Interpretation:** The results confirm that advanced feature engineering and modern machine learning models can significantly improve phishing detection accuracy and robustness. The adaptive feedback loop further enhances the system’s ability to respond to evolving threats.
 - **Alignment with Objectives:** All research objectives were met or exceeded, with the system achieving high accuracy, improved F1-scores, and successful real-time evaluation.
-- **Comparison with Literature:** The findings are consistent with and extend recent research, demonstrating the value of combining diverse features and advanced models (Mosa et al., 2023); [Liu et al., 2021](#liu2021)).
+- **Comparison with Literature:** The findings are consistent with and extend recent research, demonstrating the value of combining diverse features and advanced models (Mosa et al., 2023; Liu et al., 2021).
 - **Limitations and Future Work:** While results are promising, future work should address real-world deployment challenges, expand datasets, and further automate the feedback integration process.
 
 ---
@@ -237,7 +237,7 @@ flowchart TD
 
 #### 6.1 Conclusion
 
-This thesis has presented the design and development of an adaptive phishing detection system leveraging advanced feature engineering and state-of-the-art machine learning algorithms. The proposed model addresses key challenges identified in the literature—such as the need for robustness, scalability, and adaptability to evolving phishing tactics (Mosa et al., 2023); [Doshi et al., 2023](#doshi2023)). By systematically collecting diverse datasets, engineering critical features, and integrating a user feedback loop, the research contributes a comprehensive framework for improving phishing detection in real-world settings.
+This thesis has presented the design and development of an adaptive phishing detection system leveraging advanced feature engineering and state-of-the-art machine learning algorithms. The proposed model addresses key challenges identified in the literature—such as the need for robustness, scalability, and adaptability to evolving phishing tactics (Mosa et al., 2023; Doshi et al., 2023). By systematically collecting diverse datasets, engineering critical features, and integrating a user feedback loop, the research contributes a comprehensive framework for improving phishing detection in real-world settings.
 
 Although actual experimental results are pending, the methodology and system architecture have been structured to meet the stated research objectives: (1) achieving high detection accuracy, (2) advancing feature engineering methods, and (3) enabling real-time, adaptive deployment. The work lays a strong foundation for future implementation and evaluation.
 
@@ -246,7 +246,7 @@ Although actual experimental results are pending, the methodology and system arc
 Building on the current research, several directions are proposed for future work:
 
 - **Empirical Evaluation:** Complete the implementation and conduct extensive experiments to validate the model’s effectiveness using benchmark and real-world datasets. Insert actual results and analyses once available.
-- **Deep Learning and Hybrid Models:** Explore additional deep learning architectures (e.g., transformers, graph neural networks) and hybrid/ensemble approaches to further enhance detection performance (Liu et al., 2021)).
+- **Deep Learning and Hybrid Models:** Explore additional deep learning architectures (e.g., transformers, graph neural networks) and hybrid/ensemble approaches to further enhance detection performance (Liu et al., 2021).
 - **Adversarial Robustness:** Investigate the system’s resilience against adversarial attacks and develop strategies to improve robustness.
 - **Broader Threat Coverage:** Extend the system to detect related cyber threats, such as spear phishing, ransomware, and social engineering attacks.
 - **Automated Feedback Integration:** Further automate the user feedback loop to enable continuous learning and adaptation with minimal manual intervention.
