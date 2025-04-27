@@ -1,5 +1,6 @@
 # Data and dataset folders
 Dataset(D1)/
+articles/
 *.zip
 *.csv
 *.xlsx
