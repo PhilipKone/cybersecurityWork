@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 # --- Load Features and Labels ---
 X_train_url = pd.read_csv('notebooks/X_train_url_features.csv')
 X_test_url = pd.read_csv('notebooks/X_test_url_features.csv')
+X_train_html = pd.read_csv('notebooks/X_train_html_features.csv')
+X_test_html = pd.read_csv('notebooks/X_test_html_features.csv')
 train_df = pd.read_csv('notebooks/y_train.csv')
 test_df = pd.read_csv('notebooks/y_test.csv')
 
@@ -17,9 +19,13 @@ y_test = test_df.iloc[:,0].reset_index(drop=True)
 y_train = y_train.map({-1: 0, 1: 1})
 y_test = y_test.map({-1: 0, 1: 1})
 
+# --- Combine URL and HTML features ---
+X_train_combined = pd.concat([X_train_url, X_train_html], axis=1)
+X_test_combined = pd.concat([X_test_url, X_test_html], axis=1)
+
 # --- Train XGBoost Classifier ---
-dtrain = xgb.DMatrix(X_train_url, label=y_train)
-dtest = xgb.DMatrix(X_test_url, label=y_test)
+dtrain = xgb.DMatrix(X_train_combined, label=y_train)
+dtest = xgb.DMatrix(X_test_combined, label=y_test)
 
 params = {
     'objective': 'binary:logistic',
