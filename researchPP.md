@@ -86,7 +86,7 @@ The objectives of this research are:
 
 #### 1.4 Outline of Methodology
 
-This structured methodology ensures the research is actionable, measurable, and directly builds on and extends the state-of-the-art in phishing detection.To achieve these objectives, the research will proceed as follows:
+This methodology ensures the research is actionable, measurable, and directly builds on and extends the state-of-the-art in phishing detection.To achieve these objectives, the research will proceed as follows:
 
 1. **Baseline Replication and Data Preparation:**
 
