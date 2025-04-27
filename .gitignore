@@ -1,0 +1,20 @@
+# Data and dataset folders
+Dataset(D1)/
+*.zip
+*.csv
+*.xlsx
+
+# Python cache and virtual environment
+__pycache__/
+.venv/
+
+# Jupyter and notebook checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Ignore all HTML/CSV/Excel files in notebooks
+notebooks/*.csv
+notebooks/*.xlsx
