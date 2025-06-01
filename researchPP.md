@@ -26,6 +26,7 @@ LIST OF ABBREVIATIONS	xi
 2.2 Phishing Detection Techniques	2
 2.2.1 Preprocessing Techniques	2
 2.2.2 Feature Engineering	2
+2.2.2.1 Justification for Behavioral and Dynamic Features
 2.2.3 Machine Learning Algorithms	2
 
 #### Chapter 3 - Methodology	4
@@ -35,13 +36,9 @@ LIST OF ABBREVIATIONS	xi
 3.3 Analysis Techniques	4
 3.4 Model Development	4
 3.5 User Feedback Integration	4
-
-#### Chapter 4 – Proposed Model	5
-
-4.1 Machine Learning-Driven Detection	5
-4.2 Dataset Preparation	5
-4.3 Feature Engineering	5
-4.4 Model Selection and Evaluation	5
+3.8 Proposed Adaptive Phishing Detection Model
+  3.8.1 System Workflow
+  3.8.2 System Flowchart
 
 #### Chapter 5 – Results and Discussion	6
 
@@ -70,22 +67,23 @@ Recent years have seen a surge in the use of machine learning and AI by both att
 
 To address these evolving challenges, the development of adaptive phishing detection models is essential. Such models require comprehensive datasets, advanced feature engineering, and the integration of state-of-the-art machine learning algorithms to enhance detection accuracy and adaptability to emerging threats (Goud & Mathur, 2021; Liu et al., 2021).
 
+Despite the proliferation of machine learning and AI-based solutions, a persistent challenge in phishing detection research is the reliance on static or outdated datasets. Many existing studies use datasets that do not reflect the rapidly evolving tactics of attackers, resulting in models that may perform well in controlled experiments but fail to generalize to real-world scenarios. While this research acknowledges the importance of comprehensive and up-to-date datasets, it specifically addresses the need for advanced feature engineering and real-time adaptability to improve detection accuracy and resilience against emerging phishing threats.
+
 #### 1.2 Problem Statement
 
-Despite advancements in phishing detection, attackers continuously adapt their tactics, making many existing systems ineffective against new and sophisticated threats. Current limitations include over-reliance on static or outdated datasets, insufficient diversity in feature engineering, and a lack of real-time adaptability. As a result, detection systems often suffer from high false positive rates, limited scalability, and poor generalization to novel phishing strategies. There is a critical need for a robust, adaptive, and data-driven phishing detection approach that leverages comprehensive datasets, advanced feature engineering (including URL, HTML, and behavioral features), and rigorous validation to achieve high accuracy, low false positive rates, and resilience against evolving phishing techniques.
+Despite advancements in phishing detection, attackers continuously adapt their tactics, making many existing systems ineffective against new and sophisticated threats. Current limitations include insufficient diversity in feature engineering and a lack of real-time adaptability. As a result, detection systems often suffer from high false positive rates, limited scalability, and poor generalization to novel phishing strategies. There is a critical need for a robust and adaptive phishing detection approach that leverages advanced feature engineering (including URL, HTML, and behavioral features), and rigorous validation to achieve high accuracy, low false positive rates, and resilience against evolving phishing techniques.
 
-This research seeks to bridge these gaps by systematically integrating state-of-the-art machine learning, diverse and up-to-date datasets, and innovative feature extraction methods to create a scalable and adaptive phishing detection system.
+This research seeks to bridge these gaps by systematically integrating state-of-the-art machine learning and feature engineering methods to create a scalable and adaptive phishing detection system.
 
 #### 1.3 Objectives
 
 The objectives of this research are:
 
-1. **To develop a machine learning-based phishing detection model using diverse datasets and advanced techniques.**
-2. **To design and implement advanced feature engineering methods, including URL, HTML, and behavioral features, and enhance model performance over established baselines.**
+1. **To design and implement advanced feature engineering methods, including URL, HTML, and behavioral features, to enhance model performance over established baselines.**
+2. **To develop a machine learning-based phishing detection model using the engineered features and diverse datasets.**
 3. **To deploy and evaluate the adaptive phishing detection system in a simulated real-time environment, assessing its scalability, adaptability, and response to emerging phishing tactics.**
 
 #### 1.4 Outline of Methodology
-
 
 This methodology ensures the research is actionable, measurable, and directly builds on and extends the state-of-the-art in phishing detection.To achieve these objectives, the research will proceed as follows:
 
@@ -108,11 +106,35 @@ This structured methodology ensures the research is actionable, measurable, and 
    - Measure system scalability, latency, and adaptability to new phishing tactics.
    - Document all findings and ensure all evaluation metrics are met or exceeded.
 
+#### 1.5 Justification
+
+The importance of this research is twofold, impacting both industry and academia in significant ways:
+
+**For Industry:**
+Phishing remains one of the most prevalent and damaging cyber threats faced by businesses today. Existing detection systems often struggle to keep up with the rapidly evolving tactics of attackers, leading to costly breaches and loss of customer trust. This research directly addresses these challenges by developing an adaptive phishing detection system that leverages advanced feature engineering—including URL, HTML, and behavioral features—and real-time adaptability. By providing a scalable and robust solution that can detect novel and sophisticated phishing attacks, this work offers industry practitioners a practical tool to enhance their cybersecurity posture, reduce false positives, and respond more effectively to emerging threats. The integration of user feedback mechanisms further ensures that the system can continuously learn and adapt, making it highly relevant for deployment in dynamic, real-world environments.
+
+**For Academia:**
+This research advances the academic field of cybersecurity and machine learning by systematically addressing gaps in feature diversity and model adaptability for phishing detection. The study introduces and rigorously evaluates new feature engineering strategies, including the integration of behavioral and language-independent features, which are underexplored in current literature. By benchmarking against established baselines and deploying the system in a simulated real-time environment, the research provides valuable empirical evidence and methodological innovations. These contributions not only extend the theoretical understanding of adaptive security systems but also offer a foundation for future research on robust, data-driven approaches to cyber threat detection.
+
+In summary, this work is of high importance to industry for its practical, deployable solutions to a pressing security problem, and to academia for its methodological advancements and contributions to the body of knowledge in adaptive phishing detection.
+
+#### 1.6 Outline of Dissertation
+
+This dissertation is organized into seven chapters as follows:
+
+- **Chapter 1: Introduction**Provides the background, problem statement, objectives, methodology overview, justification, and the overall structure of the dissertation.
+- **Chapter 2: Literature Review**Reviews existing research on phishing detection, machine learning techniques, feature engineering, and highlights the gaps addressed by this work.
+- **Chapter 3: Methodology**Details the research design, data collection, feature engineering, model development, evaluation strategies, and user feedback integration.
+- **Chapter 5: Results and Discussion**Presents the experimental setup, evaluation metrics, results, and a discussion comparing the findings with existing systems and literature.
+- **Chapter 6: Conclusion and Future Works**Summarizes the main findings, contributions, and limitations of the research, and outlines directions for future work.
+- **Chapter 7: Research Timeline**
+  Provides a detailed timeline for the completion of the research project, including key milestones and deliverables.
+
 ---
 
 ### Chapter 2 - Literature Review
 
-#### 2.1 Literature Review
+#### 2.1 Overview
 
 Phishing detection research has rapidly evolved, with a diverse array of machine learning and deep learning approaches proposed in recent years. This review synthesizes findings from a broad set of studies, with a focus on the base paper by Aljofey et al. (2022) and how this research aims to extend the state of the art.
 
@@ -135,6 +157,47 @@ Real-world deployment is a growing focus. Linh et al. (2024) built a browser ext
 **Summary and Gaps**
 
 The literature shows strong progress in phishing detection, but persistent challenges include dataset diversity, feature robustness, adaptability, and real-world deployment. Building on Aljofey et al. (2022), this research will replicate and extend their approach by incorporating advanced, language-independent, and behavioral features, and by evaluating the system in a simulated real-time environment.
+
+#### 2.2 Phishing Detection Techniques
+
+Phishing detection techniques have evolved, incorporating various machine learning algorithms and feature engineering methods. This section reviews key approaches, with a focus on the base paper by Aljofey et al. (2022) and how this research aims to extend these methods. The discussion is organized into three main areas: preprocessing techniques, feature engineering, and machine learning algorithms.
+
+##### 2.2.1 Preprocessing Techniques
+
+Effective preprocessing is crucial for accurate phishing detection. Common techniques include data cleaning, normalization, and transformation to prepare raw data for analysis. Aljofey et al. (2022) employed standard preprocessing steps such as deduplication, normalization, and tokenization. Other studies have used similar or expanded methods, including HTML and URL decoding, JavaScript de-obfuscation, and image processing (Mosa et al., 2023; Opara et al., 2024). These techniques aim to enhance feature extraction and improve model performance.
+
+Despite the importance of preprocessing, it is often overlooked in phishing detection research. Many studies do not provide detailed descriptions of their preprocessing steps, making it difficult to replicate or compare results. This research emphasizes the significance of comprehensive preprocessing by documenting all steps taken to prepare the data, including any challenges encountered and how they were addressed.
+
+##### 2.2.2 Feature Engineering
+
+Feature engineering is a critical component of phishing detection, directly impacting model performance. Aljofey et al. (2022) used TF-IDF character n-grams from URLs and HTML content as primary features, achieving high accuracy in detection. However, reliance on static features like URLs and HTML may not be sufficient to combat sophisticated phishing attacks that use obfuscation or mimicry (Gholampour & Verma, 2023).
+
+Recent studies have explored additional feature sets, such as behavioral features (user interaction patterns), network-based features (IP reputation, domain age), and content-based features (keyword frequency, HTML tag ratios) (Goud & Mathur, 2021; Opara et al., 2024). These features provide complementary information that can enhance detection robustness and reduce false positives.
+
+This research builds on these foundations by integrating advanced feature engineering methods, including the development of new behavioral and dynamic features that capture user interaction patterns and real-time content characteristics. By expanding the feature set beyond traditional static attributes, the research aims to improve the adaptability and accuracy of phishing detection models.
+
+###### 2.2.2.1 Justification for Behavioral and Dynamic Features
+
+While traditional phishing detection systems have achieved high accuracy using static features such as URL characteristics and HTML content, recent literature and empirical results highlight persistent limitations with this approach. The base paper by Aljofey et al. (2022) and several subsequent studies demonstrate that models relying solely on static features are vulnerable to evasion by sophisticated attackers who can mimic or obfuscate these attributes. Furthermore, static analysis may fail when phishing sites employ dynamic content loading, JavaScript obfuscation, or embed critical information in images, making detection more challenging.
+
+To address these gaps, researchers have increasingly advocated for the integration of behavioral and dynamic features into phishing detection frameworks. Behavioral features capture user interaction patterns—such as mouse movements, click sequences, time spent on page elements, and form submission behaviors—that are difficult for attackers to replicate convincingly. Dynamic features may also include real-time content changes, script execution patterns, or feedback signals from user actions. These features provide a new dimension of information, enabling detection systems to identify suspicious activity that static analysis alone may miss.
+
+Although the adoption of behavioral features is still emerging in the literature, several works (e.g., Goud & Mathur, 2021; Opara et al., 2024) have demonstrated their potential to improve model robustness, reduce false positives, and enhance adaptability to novel phishing tactics. The integration of such features is also frequently recommended as a future direction in comprehensive reviews and is recognized as a means to achieve real-world, scalable, and adaptive phishing detection.
+
+**In summary,** the inclusion of behavioral and dynamic features in this research is motivated by:
+- Explicit limitations identified in the base paper and related works regarding static feature reliance.
+- Literature recommendations and early evidence supporting the value of behavioral features for improved detection and robustness.
+- The need for adaptive, real-time systems capable of responding to evolving phishing strategies in practical deployments.
+
+This research will therefore extend established baselines by systematically engineering and evaluating behavioral and dynamic features, aiming to advance the state of the art in phishing detection.
+
+##### 2.2.3 Machine Learning Algorithms
+
+The choice of machine learning algorithm is pivotal in phishing detection system performance. Aljofey et al. (2022) employed XGBoost, a decision-tree-based ensemble algorithm, which has shown strong performance in various classification tasks. XGBoost's success is attributed to its ability to handle imbalanced data, its robustness to overfitting, and its efficient implementation of gradient boosting (Chen & Guestrin, 2016).
+
+Other studies have explored a range of machine learning algorithms for phishing detection, including logistic regression, support vector machines (SVM), random forests, and deep learning models such as convolutional neural networks (CNN) and recurrent neural networks (RNN) (Mosa et al., 2023; Atawneh & Aljehani, 2023). Each algorithm has its strengths and limitations, and their performance can vary based on the feature set and the specific characteristics of the phishing attacks.
+
+This research will evaluate multiple machine learning algorithms, including those used in the base paper and other state-of-the-art approaches, to identify the most effective methods for phishing detection in real-world scenarios. The evaluation will consider not only accuracy but also other factors such as model interpretability, training time, and scalability.
 
 ---
 
@@ -170,7 +233,7 @@ This chapter details the stepwise methodology for developing, validating, and de
 
 #### 3.6 Deployment and Real-Time Evaluation
 
-- **Deployment:** Integrate the best model into a simulated real-time environment or browser extension.
+- **Deployment:** Integrate the best model into a simulated real-time environment.
 - **Evaluation:** Assess scalability, latency, adaptability, and user feedback mechanisms.
 
 #### 3.7 User Feedback Integration
@@ -178,15 +241,9 @@ This chapter details the stepwise methodology for developing, validating, and de
 - **Feedback Loop:** Incorporate user feedback to refine and adapt the model.
 - **Continuous Learning:** Update the detection system as new data and feedback are collected.
 
----
+#### 3.8 Proposed Adaptive Phishing Detection Model
 
-### Chapter 4 – Proposed Model
-
-#### 4.1 Overview
-
-The proposed phishing detection system is designed as an adaptive, end-to-end pipeline that leverages advanced feature engineering and state-of-the-art machine learning algorithms. The model addresses the research objectives of accuracy, adaptability, and real-time performance, as established in previous chapters.
-
-#### 4.2 System Workflow
+##### 3.8.1 System Workflow
 
 The workflow of the proposed model consists of the following stages:
 
@@ -198,7 +255,7 @@ The workflow of the proposed model consists of the following stages:
 6. **Deployment:** Integration into a real-time or simulated environment.
 7. **User Feedback Loop:** Incorporation of user feedback to adapt the model to new phishing tactics.
 
-#### 4.3 System Flowchart
+##### 3.8.2 System Flowchart
 
 Below is a simple flowchart illustrating the overall pipeline of the proposed phishing detection system:
 
@@ -213,7 +270,7 @@ flowchart TD
     G -- Feedback & Adaptation --> C
 ```
 
-*Figure 4.1: Flowchart of the proposed adaptive phishing detection model pipeline. The system starts with data collection, proceeds through preprocessing and feature engineering, then model training and evaluation, and finally deployment. A user feedback loop enables continuous adaptation to new phishing threats.*
+*Figure 3.1: Flowchart of the proposed adaptive phishing detection model pipeline. The system starts with data collection, proceeds through preprocessing and feature engineering, then model training and evaluation, and finally deployment. A user feedback loop enables continuous adaptation to new phishing threats.*
 
 ---
 
@@ -247,7 +304,7 @@ flowchart TD
 
 #### 5.4 Discussion
 
-- **Interpretation:** The results confirm that advanced feature engineering and modern machine learning models can significantly improve phishing detection accuracy and robustness. The adaptive feedback loop further enhances the system’s ability to respond to evolving threats.
+- **Interpretation:** The results confirm that advanced feature engineering and modern machine learning models can significantly improve phishing detection accuracy and robustness. The adaptive feedback loop further enhances the system's ability to respond to evolving threats.
 - **Alignment with Objectives:** All research objectives were met or exceeded, with the system achieving high accuracy, improved F1-scores, and successful real-time evaluation.
 - **Comparison with Literature:** The findings are consistent with and extend recent research, demonstrating the value of combining diverse features and advanced models (Mosa et al., 2023; Liu et al., 2021).
 - **Limitations and Future Work:** While results are promising, future work should address real-world deployment challenges, expand datasets, and further automate the feedback integration process.
@@ -266,9 +323,9 @@ Although actual experimental results are pending, the methodology and system arc
 
 Building on the current research, several directions are proposed for future work:
 
-- **Empirical Evaluation:** Complete the implementation and conduct extensive experiments to validate the model’s effectiveness using benchmark and real-world datasets. Insert actual results and analyses once available.
+- **Empirical Evaluation:** Complete the implementation and conduct extensive experiments to validate the model's effectiveness using benchmark and real-world datasets. Insert actual results and analyses once available.
 - **Deep Learning and Hybrid Models:** Explore additional deep learning architectures (e.g., transformers, graph neural networks) and hybrid/ensemble approaches to further enhance detection performance (Liu et al., 2021).
-- **Adversarial Robustness:** Investigate the system’s resilience against adversarial attacks and develop strategies to improve robustness.
+- **Adversarial Robustness:** Investigate the system's resilience against adversarial attacks and develop strategies to improve robustness.
 - **Broader Threat Coverage:** Extend the system to detect related cyber threats, such as spear phishing, ransomware, and social engineering attacks.
 - **Automated Feedback Integration:** Further automate the user feedback loop to enable continuous learning and adaptation with minimal manual intervention.
 - **Deployment and Usability:** Pilot the system in real-world organizational environments, assess usability, and gather feedback from end-users and security professionals.
@@ -313,7 +370,7 @@ Chinta, P. C. R., Moore, C. S., Karaka, L. M., Sakuru, M., Bodepudi, V., & Maka,
 
 Doshi, J., Parmar, K., Sanghavi, R., & Shekokar, N. (2023). A comprehensive dual-layer architecture for phishing and spam email detection. *Computers & Security, 133*.
 
-Gholampour, P. M., & Verma, R. M. (2023). Adversarial robustness of phishing email detection models. In *Proceedings of the 9th ACM International Workshop on Security and Privacy Analytics (IWSPA ’23)*.
+Gholampour, P. M., & Verma, R. M. (2023). Adversarial robustness of phishing email detection models. In *Proceedings of the 9th ACM International Workshop on Security and Privacy Analytics (IWSPA '23)*.
 
 Goud, N. S., & Mathur, A. (2021). Feature engineering framework to detect phishing websites using URL analysis. *International Journal of Advanced Computer Science and Applications, 12*(7).
 
