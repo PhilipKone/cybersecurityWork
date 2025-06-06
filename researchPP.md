@@ -191,6 +191,10 @@ Although the adoption of behavioral features is still emerging in the literature
 
 This research will therefore extend established baselines by systematically engineering and evaluating behavioral and dynamic features, aiming to advance the state of the art in phishing detection.
 
+###### 2.2.2.2 Literature Gap: Behavioral Features
+
+A comprehensive review of recent phishing detection literature (see `research_articles_comprehensive.md`) reveals that behavioral or user interaction features—such as mouse movement, click patterns, or dwell time—are not explicitly implemented or discussed in the surveyed papers. While several studies highlight the limitations of static features (e.g., URL, HTML, or text content) and recommend the exploration of more dynamic or adaptive approaches, none provide concrete examples or evaluations of behavioral feature engineering. This gap underscores the novelty and potential impact of incorporating behavioral/user interaction analytics into phishing detection systems, as proposed in this research.
+
 ##### 2.2.3 Machine Learning Algorithms
 
 The choice of machine learning algorithm is pivotal in phishing detection system performance. Aljofey et al. (2022) employed XGBoost, a decision-tree-based ensemble algorithm, which has shown strong performance in various classification tasks. XGBoost's success is attributed to its ability to handle imbalanced data, its robustness to overfitting, and its efficient implementation of gradient boosting (Chen & Guestrin, 2016).
