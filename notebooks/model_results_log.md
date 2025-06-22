@@ -53,4 +53,34 @@ This file tracks major experiments, model configurations, and results for the ad
 
 ---
 
+## Experiment: Deep Learning on Raw .txt Content
+- **Date:** 2025-06-22
+- **Features Used:** Raw text content from .txt files (cleaned, tokenized, padded)
+- **Model:** Simple Embedding + GlobalMaxPooling1D + Dense (Keras Sequential)
+- **Train/Test Split:** 80/20 random split
+
+### Results
+- **Test Accuracy:** 0.859
+- **Precision/Recall/F1 (macro avg):** 0.86 / 0.86 / 0.86
+- **ROC-AUC:** 0.857
+
+**Classification Report:**
+```
+              precision    recall  f1-score   support
+
+           0       0.86      0.88      0.87      6572
+           1       0.85      0.83      0.84      5479
+
+    accuracy                           0.86     12051
+   macro avg       0.86      0.86      0.86     12051
+weighted avg       0.86      0.86      0.86     12051
+```
+
+### Notes
+- This is the first deep learning experiment using raw text content instead of engineered features.
+- The model achieves strong baseline performance, comparable to classical ML using URL features.
+- Next steps: try more advanced architectures (LSTM, CNN), combine URL and text, and perform error analysis.
+
+---
+
 _Add new experiments below this line as the project progresses._
